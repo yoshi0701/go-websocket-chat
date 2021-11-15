@@ -138,7 +138,7 @@
       let jsonData = {};
       jsonData["action"] = "broadcast";
       jsonData["username"] = document.getElementById("username").value;
-      jsonData["message"] = docuement.getElementById("message").value;
+      jsonData["message"] = document.getElementById("message").value;
       socket.send(JSON.stringify("message"))
       document.getElementById("message").value = "";
     }
